@@ -30,3 +30,7 @@ section {
     text-decoration: underline;
     
 }
+
+.outline {
+    outline: 1px solid blue;
+}
