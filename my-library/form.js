@@ -8,4 +8,8 @@ function submitForm(e){
     console. log ("email", email);
     console. log ("psw", psw);
     }
-    document.getElementById("my-form")-addEventListener("submit", submitForm);
+window.onload = () => {
+    const my_form = document.getElementById("my-form");
+    my_form.addEventListener("submit", submitForm);
+}
+

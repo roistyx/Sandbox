@@ -7,18 +7,20 @@ let livingroom_set = {
     rugs: ['persian', 'greekrug', 'help me!']
 
 }
-function recrusion(object, depth) {
-    const object_keys = Object.keys(object);
+console.log('this is object: ',livingroom_set);
 
-    for (let key of object_keys){
+function recrusive(object) {
+    const object_keys = Object.keys(object);
+    for (let key of object_keys) {
+      
         const item = object[key];
         if (typeof item == 'object'){
             recrusive(item);
         } else {
-            console.log(item);
+            console.log(key,item);
         }
 
     }
 }
 
-console.log(livingroom_set)
+recrusive(livingroom_set)
