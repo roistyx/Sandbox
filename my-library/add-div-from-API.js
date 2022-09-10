@@ -11,7 +11,7 @@ async function get_data(url) {
 
     try {
        const response = await fetch(url);
-       console.log(response)
+       console.log("Response",response)
        const result = await response.json();
 
        container_ref.innerHTML = "";
@@ -19,18 +19,29 @@ async function get_data(url) {
    
        result.forEach((object) => {
        add_comment(container_ref, object)
-    //    console.log('Container:',container_ref);
     
-    })
-    
-    
+    });
+
+    const comments = document.getElementsByClassName('comment-box');
+    for (let comment_box of comments) {
+        comment_box.addEventListener('click', (event) =>{
+            const clicked_comment_box = event.currentTarget;
+            const description_element = clicked_comment_box.childNodes[2];
+            console.log ("is active", description_element.contains('active'));
+            if (description_element.classList.contains('active')) {
+                description_element.classList.remove('active');
+            } else {
+                description_element.classList.add('active');
+            }
+        })
+    }
+     
        console.log("End of block") 
     } catch (err) {
         console.log("You have an error: ", err);
     }
-
 }
-// *** End ** 
+
 
 // *** Sync fetch function *** 
 // function get_data(url) {
@@ -48,11 +59,11 @@ async function get_data(url) {
 
 function add_comment(container, comment) {
     const comment_box = document.createElement('div');
-    comment_box.classList.add('comment_box');
-
-    comment_box.innerHTML = 
+    comment_box.classList.add('comment-box');
+    comment_box.innerHTML += 
     `<div class="title">${comment.name}</div>
-    <div class="title">${comment.email}</div>`;
+    <div class="email">${comment.email}</div>
+    <div class="description">${comment.body}</div>`;
 
     // *** Another way to inject HTML **
     // const name = document.createElement('div');

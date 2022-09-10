@@ -8,9 +8,13 @@
     outline: 1px solid blue;
 }
 
-.comment_box {
+.comment-box {
     border: 1px solid black;
     margin: 5px;
     padding: 5px
 
 }
+
+.description {
+    display: none;
+   }
