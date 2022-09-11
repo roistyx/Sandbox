@@ -16,6 +16,6 @@ function recursive_sum(n, total = 0){
         return total
     }
     const number = recursive_sum(n - 1, total + n)
-    // return number
+    return number
 }
 

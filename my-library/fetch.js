@@ -23,15 +23,12 @@
 
 // fetchHello()
 
-fetch('https://630f59da37925634188d7eb8.mockapi.io/form/submit',{
+fetch('http://localhost:5050/fibonacci/5',{
     method: 'POST',
     headers: {
         'content-type': 'applicatio/jason'
     },
-    body : JSON.stringify({
-        name: 'User 1',
-        email: 'test@test.com',
-    })
+
 }).then(response => {
     return response.json()
 })

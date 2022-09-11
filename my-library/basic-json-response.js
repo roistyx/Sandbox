@@ -12,5 +12,5 @@ function get_data(url) {
 }
 
 window.onload = () => {
-    get_data("https://jsonplaceholder.typicode.com/comments")
+    get_data("http://localhost:5050/")
 }
