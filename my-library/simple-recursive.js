@@ -1,12 +1,12 @@
-function reclusive(number) {
+function recursive(number) {
 
    const x = number -1;
    console.log(x, 'Done!');
 
    if (x == 0) {
    } else {
-    reclusive(x)
+      recursive(x)
    }
 }
 
-reclusive(20)
+recursive(20)
