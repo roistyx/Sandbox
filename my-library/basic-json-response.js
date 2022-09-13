@@ -1,3 +1,4 @@
+// A basic synchronous fetch function that stringify a JSON object from a remote server 
 function get_data(url) {
     fetch(url)
     .then((response)=> {
@@ -12,5 +13,5 @@ function get_data(url) {
 }
 
 window.onload = () => {
-    get_data("http://localhost:5050/")
+    get_data("http://localhost:5050/getFibonacciResults")
 }

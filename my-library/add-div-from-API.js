@@ -1,8 +1,8 @@
-// Async function that take promise parses json to js to create content inn divs with event listener with toggle that show and hides divs element 
+// An async function that receives a promise object, parses JSON to js to generate div content with event listener and a toggle to show and hide div elements. 
 
 // *** Async fetch function ***
 async function get_data(url) {
-    const container_ref = document.getElementById('comments-container');
+    const container_ref = document.getElementById('output-div');
     container_ref.innerHTML = "Loading...";
 
     try {
