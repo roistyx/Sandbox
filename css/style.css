@@ -1,20 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
-.outline {
-    outline: 1px solid blue;
+.grid-element {
+    position: absolute;
+    top: 12%;
+    left:15%;  
 }
 
-.comment-box {
-    border: 1px solid black;
-    margin: 5px;
-    padding: 5px
-
+#h1 {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 4.2em;
+    color: #373A3C;
+    white-space: nowrap;    
 }
 
-.active{
-    display: none;
-   }
+#input-label {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;  
+    color: #373A3C;  
+}
+
+#fib-num {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 1.5em;
+    text-decoration-line: underline; 
+    border: none;
+}
+
+#index {
+    width: 86px;
+    height: 38px;
+    border: 1px solid grey;
+    border-radius: 5px
+}
+
+
+
+

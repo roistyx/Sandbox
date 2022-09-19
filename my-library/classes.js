@@ -28,7 +28,7 @@ class Teacher {
 
   setSubject(subject) {
       this.subject = subject;
-      console.log(subject)
+    //   console.log(subject)
   }
 }
 
@@ -41,4 +41,15 @@ const new_teacher = new Teacher ({
 
 console.log(new_teacher)
 new_teacher.setSubject("Mathematics")
+
+const ann = {
+    numberOfWheels,
+    topSpeed: 120,
+
+    setNumberOfWheels(number) {
+        this.numberOfWheels = number;
+    },
+};
+
+console.log("Anonymous function", ann.setNumberOfWheels(4) );
 
