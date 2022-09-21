@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Open Sans';
+    letter-spacing: 2px;
+}
+
+.grid-element {
+    position: absolute;
+    top: 12%;
+}
+
+.result-item {
+    border-bottom: 1px solid gray;
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 18px;
+    padding-top:24px;
+    width:1350px
+}
+
+#h1-box {
+    font-weight:300;
+    font-size: 4.2em;
+    color: #373A3C;
+    white-space: nowrap; 
+}
+
+#h2-box {
+font-weight: 200;
+font-size: 54px;
+}
+
+#index {
+    width: 86px;
+    height: 38px;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px
+}
+
+#input-label {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 24px;  
+    color: #373A3C;  
+}
+
+#fib-answer {
+    font-weight: 700;
+    font-size: 1.5em;
+    text-decoration-line: underline; 
+    border: none;
+}
+
+#greater-than-50-error {
+    color: #A94442;
+    background-color: #F2DEDE;
+    width: 227px;
+    height: 33px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid #EBCCCC;
+}
+
+#server-results {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 300px;
+}
+
+#results-list {
+    position:absolute;
+    top: 240px;
+}
