@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.custom-card {
+    width: 200px;
+    margin: 20px 20px;
+}
+
+.custom-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-container {
+    position: fixed;
+    height: 80vh;
+    width: 80vw;
+    top: 60px;
+    left: 10%;
+    background-color: #fff;
+    display: none;
+    border: 2px solid #333;
+}
