@@ -1,3 +1,27 @@
+const alphabet = ["a", "b",'c', "d", "e", "f"];
+const myNumbers = ["1", "2",'3', "4", "5", "6"];
+
+const [first,, third, ...rest] = alphabet;
+
+console.log("Deconstructing", first, third, rest)
+
+console.log("Combining two arrays", ...alphabet, ...myNumbers);
+
+newArray = alphabet.concat(myNumbers);
+
+console.log("Similar outcome as deconstructing the array", newArray)
+
+console.log("---------------")
+
+function sumAndMultiply (a, b) {
+    return [a + b, a * b, a / b]
+}
+
+const [sumMe, multiply, devision = "No devision"] = sumAndMultiply(4, 5);
+
+console.log(devision)
+
+ 
 // const anObject = {
 //     keyA: 'ValueA',
 //     keyB: 'ValueB',
@@ -45,19 +69,19 @@
 
 //     console.log(object2)
 
-const myObject = {
-    keyA:   'valueA',
-    keyB:   'valueB',
+// const myObject = {
+//     keyA:   'valueA',
+//     keyB:   'valueB',
     
-    myArrowFunction: () =>{
-        console.log(myObject.keyA)
-    },
+//     myArrowFunction: () =>{
+//         console.log(myObject.keyA)
+//     },
 
-    myRegularFunction: function() {
-        console.log(this.keyA)
-    }
-}
-myObject.myArrowFunction()
-myObject.myRegularFunction()
+//     myRegularFunction: function() {
+//         console.log(this.keyA)
+//     }
+// }
+// myObject.myArrowFunction()
+// myObject.myRegularFunction()
 
 

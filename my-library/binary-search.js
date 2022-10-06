@@ -1,4 +1,4 @@
-// 
+// A loop function that searches for a number within a specified range and counts the number of iterations  
 function binary_search(items, term, depth) {
     const mid_point = Math.round(items.length / 2);
     // console.log(mid_point)

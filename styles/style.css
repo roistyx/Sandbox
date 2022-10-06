@@ -89,7 +89,9 @@ font-size: 54px;
     width:1350px
 }
 
-
+.larger-than-50 {
+    display: none;
+}
 
 
 
