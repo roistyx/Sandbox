@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>
+            <span id=counter-holder>0</span>
+        </p>
+        <button id="start-count-button" >Start Count</button>
+    </div>
+    <script>
+        const counterHolder = document.getElementById('counter-holder');
+        const startCountButton = document.getElementById('start-count-button');
+        let isCounting = false;
+        let counter = 0;
+        let interval;
+
+        startCountButton.addEventListener('click', () =>{
+            if (isCounting) {
+                console.log(isCounting)
+                startCountButton.innerHTML = "Start Again";
+                clearInterval(interval)
+                
+            } else {
+                interval = setInterval(() => {
+                    counter++;
+                    counterHolder.innerHTML = counter;
+                }, 1000);
+                startCountButton.innerHTML = "Stop Count";
+                
+                
+            }
+            isCounting = !isCounting
+            console.log(isCounting)
+        })
+    </script>
+</body>
+</html>
